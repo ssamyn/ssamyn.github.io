@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: houschka-pro, sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 :root {
@@ -11,9 +11,6 @@
 }
 
 body {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;*/
     min-height: 100vh;
     background: var(--clr);
 }
@@ -56,7 +53,7 @@ nav ul li a {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 nav ul li a img {
@@ -67,7 +64,7 @@ nav ul li a img {
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 00px;
     transition: 0.5s;
     color: var(--clr);
@@ -80,7 +77,7 @@ nav ul li.active a img {
 nav ul li a .text {
     position: absolute;
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.75em;
     letter-spacing: 0.1em;
     transition: 0.5s;
@@ -179,11 +176,13 @@ header div:first-of-type img {
 
 header h1 {
     font-size: 5em;
+    font-weight: 900;
     color: white;
 }
 
 header h2 {
     font-size: 3em;
+    font-weight: 700;
     color: lightgray;
 }
 
@@ -200,7 +199,7 @@ h2 {
 article {
     margin: 0px;
     padding: 0px;
-    font-weight: 200;
+    font-weight: 400;
     color: rgb(73, 73, 73);
 }
 
@@ -214,7 +213,7 @@ article {
 
 section>div div {
     color: var(--txt);
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -222,22 +221,28 @@ h3 {
     text-align: center;
 }
 
-aside {
+aside,
+aside div {
+    font-family: 'EB Garamond', serif;
     display: flex;
     align-items: flex-start;
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin: 0 auto;
     width: 85%;
     background-color: lightgray;
     padding: .5em;
-    padding-bottom: 0;
     border-radius: 1em;
+
+}
+
+aside div {
+    margin: -5px;
 }
 
 .quote {
-    font-size: 3em;
-    margin-top: -25px;
-    margin-right: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 4.5em;
+    margin-top: -35px;
 }
 
 footer {
@@ -257,6 +262,4 @@ footer {
     header div:first-of-type {
         display: none;
     }
-
-    body {}
 }
