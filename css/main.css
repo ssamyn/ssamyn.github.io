@@ -256,10 +256,15 @@ footer {
     header {
         display: grid;
         grid-template-columns: 1fr;
-        min-width: 600px;
+        min-width: 450px;
     }
 
-    header div:first-of-type {
+    /* header div:first-of-type {
+        display: none;
+    } */
+
+    header h1,
+    header h2 {
         display: none;
     }
 }
