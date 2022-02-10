@@ -1,5 +1,5 @@
 <section class="formulier">
-    <form method="post" action="mailto:hohamam@hogent.be?subject=Hamam-Reservatie">
+    <form method="post">
         <fieldset>
             <legend>Contacteer ons</legend>
             <div>
@@ -16,7 +16,7 @@
             <label>Aanvraag</label>
             <textarea name="gasten" placeholder="Geef hier je bericht in..."></textarea></div>
         <div class="knoppen">
-            <input type="submit" value="VERSTUUR">
+            <input type="submit" value="VERSTUUR" onclick="sendmail()">
             <input type="reset" value="RESET">
         </div>
     </form>
