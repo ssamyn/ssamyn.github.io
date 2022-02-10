@@ -252,12 +252,13 @@ aside div {
 
 footer {
     margin-top: 20px;
-    padding-left: 1em;
+    /* padding-left: 1em; */
     min-height: 30px;
 }
 
 .social-media ul {
     width: 90%;
+    margin: 0 auto;
     justify-content: center;
     gap: 1em;
     display: flex;
