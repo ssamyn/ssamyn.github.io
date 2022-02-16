@@ -1,7 +1,3 @@
-// let sendmail = function () {
-//   alert('Called properly');
-// };
-
 let sendmail = function () {
   let naamAfzender = document.getElementById('naamAfzender').value;
   let voornaamAfzender = document.getElementById('voornaamAfzender').value;
@@ -13,11 +9,15 @@ let sendmail = function () {
   <p>${bericht}</p>
 
   `;
+
   Email.send({
     SecureToken: '93e617ac-c146-43c8-85c0-367669df2ca8',
     To: 'nyasha.samyn@gmail.com',
     From: 'stefaan.samyn@gmail.com',
     Subject: 'Aanvraag Flexi Medium',
     Body: body
-  }).then((message) => alert('Bedankt!\nWe beantwoorden je zo snel mogelijk.'));
+  }).then((message) => {
+    alert('Bedankt!\nWe beantwoorden je zo snel mogelijk.');
+    document.getElementById('formulier').reset();
+  });
 };
