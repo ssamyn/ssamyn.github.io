@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap"
@@ -23,7 +24,7 @@
                 <li> <a href="#" class="current-page">Contact</a> </li>
             </ul>
         </nav>
-        <header>
+        <header id="contact-header">
             <div>
                 <h1>Flexi Medium</h1>
                 <p>'Digitaal is onze taal'</p>
@@ -31,24 +32,25 @@
         </header>
         <main>
             <section class="formulier">
-                <form method="post">
+                <form method="post" action="javascript:sendmail()" id="formulier">
                     <fieldset>
                         <legend>Contacteer ons</legend>
                         <div>
-                            <label for="naam">Naam</label>
-                            <input id="naam" type="text" name="voornaam" placeholder="Voornaam">
-                            <input type="text" name="naam" placeholder="Naam">
+                            <label for="voornaamAfzender">Naam</label>
+                            <input type="text" name="voornaam" placeholder="Voornaam" id="voornaamAfzender">
+                            <input type="text" name="naam" placeholder="Naam" id="naamAfzender">
                         </div>
                         <div>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" placeholder="E-mail adres" required>
+                            <label for="emailAfzender">E-mail</label>
+                            <input type="email" name="email" placeholder="E-mail adres" id="emailAfzender" required>
                         </div>
                     </fieldset>
                     <div class="aanvraag">
                         <label>Aanvraag</label>
-                        <textarea name="gasten" placeholder="Geef hier je bericht in..."></textarea></div>
+                        <textarea name="gasten" placeholder="Geef hier je bericht in..."
+                                  id="berichtAfzender"></textarea></div>
                     <div class="knoppen">
-                        <input type="submit" value="VERSTUUR" onclick="sendmail()">
+                        <input type="submit" value="VERSTUUR">
                         <input type="reset" value="RESET">
                     </div>
                 </form>
